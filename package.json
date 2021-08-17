@@ -1,0 +1,22 @@
+{
+  "name": "nodeconsumingrest",
+  "version": "1.0.0",
+  "description": "Projeto Teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilsonbraggion/NodeConsumingRest.git"
+  },
+  "author": "Gilson Braggion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilsonbraggion/NodeConsumingRest/issues"
+  },
+  "homepage": "https://github.com/gilsonbraggion/NodeConsumingRest#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
