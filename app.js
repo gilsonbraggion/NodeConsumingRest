@@ -1,15 +1,23 @@
 const express = require('express')
 const app = express()
 
-let chamadasRouter = require('./Roteadores/chamadasRouter')
 
 const port = 3000
 
+// Configuração para chegar o Request com o Json Preenchido
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
+
+
+let chamadasRouter = require('./Roteadores/testeRouter')
+let clientesRouter = require('./Roteadores/clienteRouter')
 
 app.use('/chamadaRouter', chamadasRouter);
+app.use('/clientes', clientesRouter);
+
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Favor chamar uma das URLs da API')
 })
 
 app.listen(port, () => {
